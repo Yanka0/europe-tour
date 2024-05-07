@@ -1,0 +1,51 @@
+.btn {
+  display: inline-block;
+  padding: 5px 20px;
+
+  .headerBtn {
+    &:hover {
+      background-color: #2d2d2d;
+      transition: color 0.3s;
+    }
+  }
+}
+
+.logOutBtn {
+  display: inline-block;
+}
+
+.cartBtn {
+  align-self: center;
+}
+
+.userName {
+  align-self: center;
+  padding: 0 20px;
+}
+.link {
+  margin-right: 17px;
+  text-decoration: none;
+  align-self: center;
+  color: #626060;
+
+  &:hover {
+    color: #c26a6a;
+    transition: color 0.3s;
+  }
+}
+
+@media (max-width: 990px) {
+  .link {
+    align-self: auto;
+    padding: 5px 0 0 20px;
+  }
+  .userName {
+    padding: 5px 20px;
+    text-align: left;
+    align-self: auto;
+  }
+  .cartBtn {
+    align-self: auto !important;
+  }
+}
+

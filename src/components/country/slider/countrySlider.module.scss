@@ -1,0 +1,21 @@
+.countryItemImage {
+  width: 100%;
+  object-fit: cover;
+  max-height: 460px;
+  filter: brightness(80%);
+}
+
+.countryItemAbout {
+  background: rgba(119, 110, 110, 0);
+  display: inline-block;
+  top: 0;
+
+  .title {
+    font-size: 40px;
+    color: #ffffff;
+  }
+}
+
+
+
+

@@ -1,0 +1,51 @@
+.countryCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  padding: 30px 10px;
+  margin: 10px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .countryCardOverlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    .countryCardImage {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .countryCardText {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+
+      .countryCardsTitle {
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .countryCardBtn {
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #56b864;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+}

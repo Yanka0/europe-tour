@@ -1,0 +1,16 @@
+.aboutUsCards {
+  padding: 50px 0;
+  .aboutUsCard {
+    border: none;
+
+    img {
+      align-self: center;
+      margin-top: 40px;
+    }
+
+    .aboutUsTitle {
+      text-align: center;
+      font-size: 17px;
+    }
+  }
+}

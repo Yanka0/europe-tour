@@ -1,0 +1,29 @@
+.programItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .programItem {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    flex: 0 0 calc(50% - 20px);
+    background-color: #ffffff;
+    padding: 20px;
+
+    .titleContainer {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        font-weight: bold;
+        padding-bottom: 10px;
+        color: black;
+      }
+    }
+  }
+}
+
+
+
+
+

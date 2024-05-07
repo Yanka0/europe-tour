@@ -1,0 +1,69 @@
+.dates {
+  padding: 10px;
+  background-color: white;
+  width: 16rem;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  .price {
+    font-size: 25px;
+    padding: 10px;
+    background-color: #e1c345;
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    .name {
+      padding: 5px 0;
+    }
+  }
+}
+
+.cartBtns {
+  display: flex;
+  justify-content: center;
+
+  .dateBtn {
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .dateBtn:disabled {
+    background-color: rgba(159, 159, 159, 0.7);
+    border: none;
+    color: white;
+  }
+
+  .amount {
+    padding: 5px;
+  }
+}
+
+.dateList {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dateListTitle {
+  text-align: center;
+  font-size: 20px;
+  color: #888383;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
