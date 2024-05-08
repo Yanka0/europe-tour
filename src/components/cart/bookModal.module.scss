@@ -19,6 +19,9 @@
     padding-top: 20px;
   }
 }
-
-
+@media (max-width: 550px) {
+  .bookModal{
+    width: 88%
+  }
+}
 

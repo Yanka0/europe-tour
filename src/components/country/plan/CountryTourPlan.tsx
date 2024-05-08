@@ -26,7 +26,7 @@ const CountryTourPlan: FunctionComponent<Props> = () => {
           <div key={index} className={styles.programItem}>
             <div className={styles.titleContainer}>
               <p className={styles.title}>{title}</p>
-              <img src={done_icon} width={30} height={30}/>
+              <img alt='done_icon' src={done_icon} width={30} height={30}/>
             </div>
             <ul>
               {plan.map((step, idx) => (

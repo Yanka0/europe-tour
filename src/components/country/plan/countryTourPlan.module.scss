@@ -1,12 +1,11 @@
 .programItems {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 10px;
 
   .programItem {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    flex: 0 0 calc(50% - 20px);
     background-color: #ffffff;
     padding: 20px;
 
@@ -22,6 +21,7 @@
     }
   }
 }
+
 
 
 

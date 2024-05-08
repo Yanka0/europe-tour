@@ -1,11 +1,10 @@
 import {FunctionComponent} from 'react';
-import {Container, Row} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import Title from "src/utils/title/Title.tsx";
 import {useGetCountriesQuery} from "src/store/services/api.ts";
 import CountryCard from "src/components/home/countryCards/card/CountryCard.tsx";
-import {CountryData} from "src/store/entities/country/thunks/get-countries.ts";
 import {useTranslation} from "react-i18next";
-
+import styles from 'src/components/home/countryCards/card/countryCard.module.scss'
 interface OwnProps {
 }
 
@@ -17,22 +16,14 @@ const CountryCards: FunctionComponent<Props> = () => {
   if (!countries) {
     return null
   }
-  const pairsOfCountries: CountryData[][] = [];
-
-  for (let i = 0; i < countries.length; i += 2) {
-    pairsOfCountries.push(countries.slice(i, i + 2));
-  }
-
   return (
     <Container>
       <Title name={t('ourDirections')}/>
-      {pairsOfCountries.map((pair, index) => (
-        <Row key={index}>
-          {pair.map(country => (
+      <div className={styles.allCards}>
+          {countries.map(country => (
             <CountryCard key={country.id} country={country}/>
           ))}
-        </Row>
-      ))}
+      </div>
     </Container>
   );
 };

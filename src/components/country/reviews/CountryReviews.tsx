@@ -7,7 +7,6 @@ import {useAuth} from "src/contexts/Auth.tsx";
 import {useParams} from "react-router-dom";
 import {isIdExist} from "src/utils/functions.ts";
 import user_icon from 'src/img/user_icon.svg'
-import {Col, Row} from "react-bootstrap";
 import {useTranslation} from "react-i18next";
 
 type Props = {};
@@ -34,8 +33,7 @@ const CountryReviews: FunctionComponent<Props> = () => {
   }
 
   return (
-    <Row>
-      <Col>
+    <div className={styles.reviews}>
         <div>
           {!user && (
             <p className={styles.reviewTitle}>
@@ -45,7 +43,7 @@ const CountryReviews: FunctionComponent<Props> = () => {
           {reviews.map(({id, text, name}) => (
             <div className={styles.reviewItem} key={id}>
               <div className='d-flex'>
-                <img src={user_icon} width={20} height={20}/>
+                <img alt='user_icon' src={user_icon} width={20} height={20}/>
                 <p>{name}</p>
               </div>
               <p className={styles.review}>{text}</p>
@@ -65,14 +63,11 @@ const CountryReviews: FunctionComponent<Props> = () => {
             </div>
           ))}
         </div>
-      </Col>
 
-      {user && <Col>
-        <ReviewForm countryId={countryId} onFormClose={handleFormClose}/>
-      </Col>
+      {user && <div>
+        <ReviewForm countryId={countryId} onFormClose={handleFormClose}/></div>
       }
-
-    </Row>
+      </div>
   )
 };
 export default CountryReviews;
