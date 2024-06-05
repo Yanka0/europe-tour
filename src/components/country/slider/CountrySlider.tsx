@@ -16,7 +16,7 @@ const CountrySlider: FunctionComponent<Props> = ({country}) => {
     <Carousel fade>
       {country.imgs.sliderImgs.map((img:string, index:number) => (
         <Carousel.Item key={index}>
-          <img className={styles.countryItemImage} src={`${API_URL}/img/${img}`}/>
+          <img alt='image' className={styles.countryItemImage} src={`${API_URL}/img/${img}`}/>
           <Carousel.Caption>
             <div className={styles.countryItemAbout}>
               <p className={styles.title}>{country.title}</p>

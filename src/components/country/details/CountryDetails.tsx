@@ -32,17 +32,17 @@ const CountryDetails: FunctionComponent<Props> = () => {
       <Container>
         <div className={styles.countryItem}>
           <div className={styles.countryItemInfo}>
-            <img src={calendar_icon} height={23} width={23}/>
+            <img alt='calendar' src={calendar_icon} height={23} width={23}/>
             <p className={styles.countryItemTitle}>{t('duration')}</p>
             <p>{country.duration}</p>
           </div>
           <div className={styles.countryItemInfo}>
-            <img src={map_icon} height={23} width={23}/>
+            <img alt='map' src={map_icon} height={23} width={23}/>
             <p className={styles.countryItemTitle}>{t('itemCountries')}</p>
             <p>{country.countries}</p>
           </div>
           <div className={styles.countryItemInfo}>
-            <img src={info_icon} height={23} width={23}/>
+            <img alt='info' src={info_icon} height={23} width={23}/>
             <p className={styles.countryItemTitle}>{t('description')}</p>
             <p>{country.description}</p>
           </div>
